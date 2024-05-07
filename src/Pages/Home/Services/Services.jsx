@@ -8,7 +8,7 @@ const Services = () => {
 
     // useEffect(() => { }, [])
     useEffect(() => {
-        fetch('services.json')
+        fetch('http://localhost:1000/services')
             .then(res => res.json())
             .then(data => serServices(data))
     }, [])
